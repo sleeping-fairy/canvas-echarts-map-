@@ -1,0 +1,185 @@
+/* 清除全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 清除浮动 */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+/* 清除圆点 */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 主体样式 */
+.container {
+  position: relative;
+  width:1920px;
+  height: 1080px;
+  background: url(../images/beijing.png) no-repeat;
+}
+/* 媒体查询
+@media screen and (min-width:1367px) and (max-width:1920px){ 
+  .container{ 
+        width:1920px;
+        height: 1080px;
+  }
+} 
+@media screen and (max-width: 1366px) {
+  .container{
+        width:1366px;
+  }
+} */
+
+/* 退出区域 */
+.tuichu {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+}
+
+/* 配置常用功能区域 */
+.rwgl {
+  position: absolute;
+  top: 18%;
+  left: 25%;
+}
+.tztjgl {
+  position: absolute;
+  top: 18%;
+  left: 65%;
+}
+.wdgz {
+  position: absolute;
+  left: 17%;
+  top: 40%;
+}
+.xmgl {
+position: absolute;
+top: 41%;
+left: 69%;
+}
+
+.rwgl:hover,
+.tztjgl:hover,
+.wdgz:hover,
+.xmgl:hover {
+  transform: scale(1.1);
+}
+/* 大地图区域 */
+.big-map {
+  position: absolute;
+  top: 2%;
+  left: 16%;
+  width: 1301px;
+  height: 932px;
+  z-index: 999;
+  background: url(../images/kuang.png) no-repeat;
+}
+.big-map .b-m {
+  position: absolute;
+  top: 12%;
+  left: 17%;
+}
+.shanchu {
+  position: absolute;
+  top: 11%;
+  right: 8%;
+}
+/* 小地图区域 */
+.map {
+  position: absolute;
+  top: 806px;
+  left: 50%;
+  transform: translateX(-72px);
+  width: 162px;
+  height: 145px;
+  text-align: center;
+  font-size: 14px;
+  font-family: '微软雅黑';
+  color:#1bacbd;
+  
+}
+
+.map img {
+  margin-top: -10px;
+  animation: map 1.2s step-start infinite;
+}
+@keyframes map {
+  0%{ 
+    transform: scale(1.0);
+   }
+	50%{ 
+    transform: scale(1.2);
+     }
+}
+
+/* 单项区域 */
+.items {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  /* transform: translateX(-25%); */
+  width: 100%;
+  height: 85px;
+}
+.items ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 11%;
+}
+.items li {
+  position: relative;
+  width: 171px;
+  height: 85px;
+  background: url(../images/kuang1.png) no-repeat;
+  /* margin: 0 1%; */
+}
+.items li a {
+  font-weight: 700;
+  color: #1bacbd;
+}
+.number {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font-size: 20px;
+}
+.info {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 137px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  font-size: 14px;
+}
+.fy1 {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+}
+.fy2 {
+  position: absolute;
+  top: 16%;
+  right: 7%;
+}
+
+/* canvas 区域 */
+#myCanvas {
+  position: absolute;
+  top: 17%;
+  left: 9%;
+}
